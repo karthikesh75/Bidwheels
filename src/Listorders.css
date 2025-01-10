@@ -1,0 +1,96 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .grid-container{
+      display: grid; /* Enables grid layout */
+      grid-template-columns: 25% 75%; /* Sidebar takes 25%, main content takes 75% */
+      height: 100vh; 
+    }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .profile-icon {
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 50%;
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #ff7e00, #ff3d00);
+    padding: 20px;
+    width: 200px;
+  }
+  .user-icon{
+    cursor: pointer;
+  }
+  
+  .new-order, .order-history, .bid-lists {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .main-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    flex-grow: 1;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .active-orders, .previous-orders {
+    margin-bottom: 20px;
+  }
+  
+  .order-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .active {
+    background-color: #f0f4ff;
+  }
+  
+  .track-status, .view-details {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }

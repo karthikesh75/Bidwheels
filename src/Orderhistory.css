@@ -1,0 +1,104 @@
+/* Desktop5.css */
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+
+
+.profile-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #ff7f50;
+  border-radius: 50%;
+}
+.user-icon{
+  cursor: pointer;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #ff7f50, #ff4500);
+  padding: 16px;
+  margin-top: 85px;
+  width: 200px;
+}
+.grid-container{
+  display: grid; /* Enables grid layout */
+  grid-template-columns: 25% 75%; /* Sidebar takes 25%, main content takes 75% */
+  height: 100vh; 
+}
+
+.new-order-btn,
+.order-history-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.main-content {
+  padding: 32px;
+  background-color: #f9f9f9;
+  flex-grow: 1;
+  margin: 130px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.order-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.order-card.active {
+  background-color: #f0f4ff;
+}
+
+.order-info p {
+  margin: 4px 0;
+}
+
+.track-status-btn,
+.view-details-btn {
+  background-color: #ff7f50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
