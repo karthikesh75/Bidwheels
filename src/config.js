@@ -1,0 +1,1 @@
+export const API_BASE_URL = 'http://bidwheels-api-env.eba-ts5rcstj.us-east-1.elasticbeanstalk.com';
